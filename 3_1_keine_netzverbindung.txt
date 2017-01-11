@@ -1,0 +1,27 @@
+﻿Debain als DHCP-Client
+
+Keine Netzwerkverbindung ? 
+
+1.) Kabel überprüfen
+2.) Als root einloggen
+3.) "ip addr" -> eth0 oder eth1 auf UP? Wenn DOWN weiter:
+4.) "cat /etc/network/interfaces" -> eth0 oder eth1 einstellungen vorhanden?
+5.) Wenn nicht -> Eintrag mit eth0 oder eht1 oder beides hinzufügen
+    Datei mit nano bearbeiten -> "nano /etc/network/interfaces"
+            
+    Eintrag:
+
+    auto eth0
+    allow-hotplug eth0
+    iface eth0 inet dhcp
+
+    Strg + O um zu speichern
+    Strg + X um Nano zu beenden
+
+
+6.) Neutstarten mit "reboot"
+7.) "ip addr" -> eth0 oder eth1 auf UP?
+    Wenn nicht -> Kein DHCP Server im Netz!
+    Problem liegt nicht an Debian
+
+        
