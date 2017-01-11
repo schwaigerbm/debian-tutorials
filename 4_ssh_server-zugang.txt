@@ -17,6 +17,6 @@ SSH Server mit Debian:
 
     1.) Einbage von IP, sowie Benutzernae und Passwort (nicht Root)
     2.) "sudo apt-get update"
-    3.) "sudo apt-get upgarde"
+    3.) "sudo apt-get upgrade"
     Hinweis: "sudo" vor einem Befehl führt diesen als Root aus, fals 
     entsprechende Rechte an den Benutzer verliehen wurden.
