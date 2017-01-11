@@ -1,0 +1,68 @@
+﻿Samba Server mit Debain:
+
+    "Dateiserver als Windows Server Alternative"
+
+    1.) Updates durchführen 
+            "sudo apt-get update"
+            "sudo apt-get upgrade"
+    
+    2.) Notwendige Paket installieren ("samba" und "samba-common")
+            "sudo apt-get install samba samba-common"
+
+            Zur Sicherheit Konfiguratiosdatei sichern:
+            
+            "sudo cp /etc/samba/smb.conf /etc/samba/smb.conf.bak"
+            Kopiert die Datei und bennent sie in smb.conf.bak um
+
+    3.) Benutzerverwaltung:
+            Samba hat eine getrennte Benutzerverwaltung von Linux
+            d.h. Linux Benutzer sind nicht gleich Samba Benutzer.
+    
+            Benutzer zu Samba hinzufügen:
+            "sudo smbpasswd -a bernhard"
+            
+            Fügt den Benutzer "bernhard" zu Samba hinzu.
+            Es wird empfohlen das gleiche Passwort zu wählen.
+
+     4.) Konfigurationen und Einstellungen
+
+            Alle Konfigurationen sind unter /etc/samba/smb.conf
+
+            Ablauf zur Konfiguration:
+             - Konfigurationsdatei bearbeiten: "sudo nano /etc/samba/smb.conf"
+             - Konfigurationen vollziehen
+             - Strg + O um zu speicher und Strg + X um zu beenden
+             - Konfigurationen überprüfen: "testparm"
+             - Samba Dienst/Service neu starten: "sudo service smbd restart"
+
+     5.) Einfache Heimatverzeichnisse freigeben:
+
+            Section: [home]
+            Paramater "read only" auf "no"
+
+            UNC-Pfad unter Windows:
+            \\Ip-Adresse\user      --> Im Explorer
+
+            Beispiel: \\192.168.12.5\bernhard
+
+     6.) Allgemeine Freigabe:
+            
+            [Anleitungen]
+            path = /var/samba/Anleitungen
+            comment = Anleitungen
+            available = yes
+            browsable = yes
+            writeable = yes
+            guest ok = no
+            create mark = 0664
+            directory mark = 0775
+
+
+
+            https://wiki.ubuntuusers.de/Samba_Server/smb.conf/
+
+            --> Im speziellen Sektion Dateifreigabe
+
+
+
+
