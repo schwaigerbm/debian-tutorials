@@ -1,0 +1,22 @@
+SSH Server mit Debian:
+
+
+    1.) als Root einloggen
+    2.) "apt-get install openssh-server" -> SSH Serverpaket installieren
+    3.) "reboot" -> System neustart
+    4.) Mit User oder Root: "ip addr" -> IP Adresse des Servers herausfinden 
+        Bsp: inet 192.168.12.1 -> IP notieren!
+
+    Zugriff mit "Putty" von einem Windows Client:
+
+    1.) Download Putty vom Internet -> Einfach Version
+    2.) Eingabe der IP-Adresse des Servers
+    3.) Eingabe von Benuterzname und Passwort
+
+    Beispiel einer SSH Fernwartung:
+
+    1.) Einbage von IP, sowie Benutzernae und Passwort (nicht Root)
+    2.) "sudo apt-get update"
+    3.) "sudo apt-get upgarde"
+    Hinweis: "sudo" vor einem Befehl führt diesen als Root aus, fals 
+    entsprechende Rechte an den Benutzer verliehen wurden.
