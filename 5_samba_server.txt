@@ -54,7 +54,7 @@
             browsable = yes
             writeable = yes
             guest ok = no
-            create mark = 0664
+            create mask = 0664
             directory mark = 0775
 
 
