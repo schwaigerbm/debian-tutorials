@@ -1,4 +1,5 @@
 Grundkonfiguration von Debian:
+(Nach dem Login mit "root")
 
 1.) "apt-get update"
     Aktualisiert alle Paketlisten "Wo welches Paket liegt"
