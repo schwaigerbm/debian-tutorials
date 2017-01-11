@@ -1,0 +1,24 @@
+Grundkonfiguration von Debian:
+
+1.) "apt-get update"
+    Aktualisiert alle Paketlisten "Wo welches Paket liegt"
+
+2.) "apt-get upgrade"
+    Aktualisiert alle Pakete
+
+3.) "apt-get install xyz"
+    Installiert das Programm xyz
+    Als Test bspw. "mc" als Dateimanager (Aufruf mit "mc")
+
+4.) Um Root-Rechte als Benutzer zu erlangen
+    - Installation des Programms "sudo"
+    - Hinzufügen des Benutzers "max" zur sudo Gruppe
+      "gpasswd -a max sudo"
+    - Somit hat man Root-Rechte mit "sudo" vor dem Befehl
+
+5.) Erste Befehle:
+    "logout" -> Ausloggen
+    "shutdown -r" -> Neustarten
+    "shutdown -t now" -> Nach einer Minute herunterfahren
+    "ip addr show" -> Gibt die Netzwerkkonfiguration aus (ipconfig)
+    "nano xyz" -> Öffnet die Datei xyz im Texteditor
