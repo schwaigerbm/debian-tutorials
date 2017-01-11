@@ -1,0 +1,26 @@
+﻿Grundinformationen zu Linux:
+
+1.) Linux ist ein freies und quelloffenes Betreibssystem 
+    auf "UNIX" Basis. Daher sind auch verschiedene
+    Distributionen (Varianten) verfügbar. Das hierbei
+    verwendete "Debian-Linux" war eines der ersten.
+
+2.) "Keine Antwort ist eine gute Antwort"
+    Linux gibt dir auf der Kommandozeile nur eine Antwort 
+    fals dein Befehl nicht erfolgreich ausgeführt werden konnte.
+
+3.) "Alle Einstellungen sind Dateien"
+    Alle Einstellungen und Konfigurationen sind in Linux 
+    Datei, welche mit einem Editor bearbeitet werden müssen.
+    "Klicki-Bunti" Oberflächen sind nur bedingt möglich.
+
+4.) "Es gibt keine Laufwerksbuchstaben"
+    In Linux gibt es nur ein / welches den Hauptbaum
+    des Dateisystems bezeichnet. 
+
+5.) "Nur Root darf alles"
+    Nur der wirkliche Administrator, unter Linux "root"
+    genannt darf alles. Mit sudo ist es jedoch möglich
+    Root-Rechte auch an andere Benutzer zu verleihen.
+
+ 

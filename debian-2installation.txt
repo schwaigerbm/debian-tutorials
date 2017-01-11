@@ -1,0 +1,19 @@
+Debain Installation:
+
+1.)  Bootmenu -> Install (Kein "Graphical Install")
+2.)  Sprache Deutsch wählen
+3.)  Rechnername nach belieben wählen
+4.)  Doamin-Name leer lassen
+5.)  Root Passwort vergeben, notieren!
+6.)  Name des Benutzers vergeben
+7.)  Benutzername vergeben, notieren!
+8.)  Passwort des Benutzers vergeben, notieren!
+9.)  Partitionsmethode: "Geführt - vollständige Festplatte verwenden"
+10.) Partitionierung beenden und Änderungen übernehmen
+11.) Debian Archiv-Spiegelserver "Österreich" oder "Deutschland"
+12.) Spiegelserver nach belieben auswählen
+13.) Weleche Software soll installiert werden? 
+     Nur Standard-Systemwerkzeuge
+     alle andern mit Leertaste deaktivieren !!!!!!!
+14.) GRUB Bootloader in den Master Boot Record? Ja
+15.) Welche Festplatte soll eingetragen werden? Nicht manuell!! sda!! 
