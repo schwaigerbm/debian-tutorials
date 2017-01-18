@@ -1,0 +1,42 @@
+Webserver mit Debian:
+
+    "Webserver mit MySQL Datenbank"
+
+    1.) Updates druchführen:
+            "sudo apt-get update"
+            "sudo apt-get upgrade"
+
+    2.) Notwendige Pakete installieren:
+            "sudo apt-get install apache2 php5 php5-mysql mysql-server phpmyadmin"
+ 
+    3.) FTP Zugang herstellen
+
+        - Paket installieren: "sudo apt-get install proftpd" (Apache, Servermodus)
+      
+        - Konfiguration: "sudo nano /etc/proftpd/proftpd.conf"
+                "#"-Zeichen vor "DefaultRoot" entfernen
+                Strg + O um zu speichern Strg + X um zu schließen
+
+     4.) FTP Benutzer einrichten
+
+                "sudo  adduser ftpuser01 -home /var/www/html/ftpuser01"
+
+     5.) FTP Service neustarten
+
+                "sudo service proftpd restart"       
+
+     6.) Phpmyadmin ermöglichen:
+
+                - Anlage eines Links ins richtige Verzeichniss:
+                        "sudo ln -s /usr/share/phpmyadmin /var/www/html"
+
+                - Webserver neutstarten
+                        "sudo service apache2 restart"
+
+
+
+
+
+               
+                
+            
